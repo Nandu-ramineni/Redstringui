@@ -13,13 +13,9 @@ const Homepage = () => {
         <div className=" bg-black text-white relative">
             {/* <Navbar /> */}
             <Hero />
-            {/* <ScrollingLogos /> */}
             <Features />
             <Domains />
             <Application />
-            {/* <div id="contact">
-                <Contact />
-            </div> */}
             <Footer />
         </div>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion, useScroll, useTransform } from "framer-motion"
 import { BookOpen02Icon, Brain01Icon, Idea01Icon, ThreeDViewIcon, UserGroupIcon } from 'hugeicons-react'
+import ScrollingLogos from './ScrollingLogos'
 
 const Features = () => {
     const statsData = [
@@ -137,6 +138,7 @@ const Features = () => {
                         ))}
                     </div>
                 </motion.div>
+                <ScrollingLogos />
             </div>
         </div>
     )
