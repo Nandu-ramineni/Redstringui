@@ -28,9 +28,9 @@ const Contact = ({ setIsEmailSuccess }) => {
     }
 
     return (
-        <div className="container mx-auto p-4 flex justify-center items-center min-h-screen">
+        <div className="container mx-auto p-4 flex justify-center items-center min-h-screen ">
             <ToastContainer />
-            <Card className="w-full sm:w-3/4 md:w-3/5 border-none">
+            <Card className="w-full sm:w-3/4 md:w-3/5 border-none mt-8 sm:mt-0">
                 <CardHeader>
                     <CardTitle className="text-white text-center text-2xl md:text-4xl">Join the Club!</CardTitle>
                 </CardHeader>
