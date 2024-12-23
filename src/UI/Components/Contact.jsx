@@ -63,7 +63,7 @@ const Contact = ({ setIsEmailSuccess }) => {
                                     <Input type="college" name="pass" id="pass" placeholder="Enter your pass out year" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
-                                    <Label htmlFor="linkedin" className="text-[#727272]">what is your domain?</Label>
+                                    <Label htmlFor="linkedin" className="text-[#727272]">What is your domain?</Label>
                                     <Input type="text" name="domain" id="domain" placeholder="Tech Product Marketing or others"  required className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
