@@ -52,31 +52,31 @@ const Contact = ({ setIsEmailSuccess }) => {
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">Linkedin Profile</Label>
-                                    <Input type="text" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="text" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">College</Label>
-                                    <Input type="college" name="college" id="college" placeholder="Enter your university" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="college" name="college" id="college" placeholder="Enter your university" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">Pass out Year</Label>
-                                    <Input type="college" name="pass" id="pass" placeholder="Enter your pass out year" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="college" name="pass" id="pass" placeholder="Enter your pass out year" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">what is your domain?</Label>
-                                    <Input type="text" name="domain" id="domain" placeholder="Tech Product Marketing or others" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="text" name="domain" id="domain" placeholder="Tech Product Marketing or others"  required className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">Proof of work?</Label>
-                                    <Input type="text" name="work" id="work" placeholder="Portfolio or your work link" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="text" name="work" id="work" placeholder="Portfolio or your work link" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">What’s your personal “superpower” that makes you stand out?</Label>
-                                    <Input type="text" name="superpower" id="superpower" placeholder="Your message" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="text" name="superpower" id="superpower" placeholder="Your message" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">What’s your unique perspective on startups or entrepreneurship?</Label>
-                                    <Input type="text" name="perspective" id="perspective" placeholder="Your message" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <Input type="text" name="perspective" id="perspective" placeholder="Your message" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
                             </div>
                             <div className="flex justify-center py-4">
