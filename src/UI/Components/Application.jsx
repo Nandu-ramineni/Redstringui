@@ -41,7 +41,7 @@ const Application = () => {
                         Application Process
                     </h2>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        We are handpicking only 30 individuals through a 5-tier interview process.
+                    We are picking limited individuals through 3 tier procedure
                     </p>
                 </div>
 

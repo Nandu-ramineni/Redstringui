@@ -5,27 +5,32 @@ import { Label } from '@/components/ui/label'
 import emailjs from '@emailjs/browser';
 import { ArrowUpRight } from 'lucide-react'
 import React, { useRef } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 
-const Contact = () => {
+const Contact = ({ setIsEmailSuccess }) => {
     const form = useRef();
-
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_zfof658', 'template_a8wnpsa', form.current, 'Lm_Wni6iZVR4wdHdf')
             .then((result) => {
                 console.log(result.text);
                 toast.success('Thank you for joining the club! We will get back to you soon.');
+                setIsEmailSuccess(true);
+                navigate('/success');
                 form.current.reset();
             }, (error) => {
+                toast.error('Failed to submit the form. Please try again.');
+                setIsEmailSuccess(false);
                 console.log(error.text);
             });
     }
 
     return (
-        <div className="container mx-auto p-4 flex justify-center">
+        <div className="container mx-auto p-4 flex justify-center items-center min-h-screen">
             <ToastContainer />
-            <Card className="w-full sm:w-3/4 md:w-1/2 border-none">
+            <Card className="w-full sm:w-3/4 md:w-3/5 border-none">
                 <CardHeader>
                     <CardTitle className="text-white text-center text-2xl md:text-4xl">Join the Club!</CardTitle>
                 </CardHeader>
@@ -49,10 +54,34 @@ const Contact = () => {
                                     <Label htmlFor="linkedin" className="text-[#727272]">Linkedin Profile</Label>
                                     <Input type="text" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
                                 </div>
+                                <div className="flex flex-col space-y-3">
+                                    <Label htmlFor="linkedin" className="text-[#727272]">College</Label>
+                                    <Input type="college" name="college" id="college" placeholder="Enter your university" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                </div>
+                                <div className="flex flex-col space-y-3">
+                                    <Label htmlFor="linkedin" className="text-[#727272]">Pass out Year</Label>
+                                    <Input type="college" name="pass" id="pass" placeholder="Enter your pass out year" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                </div>
+                                <div className="flex flex-col space-y-3">
+                                    <Label htmlFor="linkedin" className="text-[#727272]">what is your domain?</Label>
+                                    <Input type="text" name="domain" id="domain" placeholder="Tech Product Marketing or others" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                </div>
+                                <div className="flex flex-col space-y-3">
+                                    <Label htmlFor="linkedin" className="text-[#727272]">Proof of work?</Label>
+                                    <Input type="text" name="work" id="work" placeholder="Portfolio or your work link" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                </div>
+                                <div className="flex flex-col space-y-3">
+                                    <Label htmlFor="linkedin" className="text-[#727272]">What’s your personal “superpower” that makes you stand out?</Label>
+                                    <Input type="text" name="superpower" id="superpower" placeholder="Your message" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                </div>
+                                <div className="flex flex-col space-y-3">
+                                    <Label htmlFor="linkedin" className="text-[#727272]">What’s your unique perspective on startups or entrepreneurship?</Label>
+                                    <Input type="text" name="perspective" id="perspective" placeholder="Your message" className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                </div>
                             </div>
                             <div className="flex justify-center py-4">
-                                <Button className="bg-red-600 hover:bg-red-700 text-white px-6 w-full sm:w-auto">
-                                    Join <ArrowUpRight />
+                                <Button className="bg-red-600 hover:bg-red-700 text-white px-6 w-full sm:w-auto text-xl">
+                                    Join <ArrowUpRight className='w-5 h-5' />
                                 </Button>
                             </div>
                         </form>

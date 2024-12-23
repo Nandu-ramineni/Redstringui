@@ -48,13 +48,13 @@ const Navbar = () => {
                     >
                         Explore Program
                     </Link> */}
-                    <a
-                        href="#contact"
+                    <Link
+                        to='/join'
                         onClick={handleNavClick}
                         className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-6 w-auto self-center text-center py-2 rounded-md"
                     >
                         Join the club
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>

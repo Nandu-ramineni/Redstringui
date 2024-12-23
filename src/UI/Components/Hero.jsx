@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -61,11 +62,11 @@ const Hero = () => {
                         Disruptive Talent
                     </p>
                 </div>
-                <a href="#contact">
+                <Link to="/join">
                 <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-lg w-full sm:w-auto">
                     Join the club
                 </Button>
-                </a>
+                </Link>
             </main>
         </div>
     )

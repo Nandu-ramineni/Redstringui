@@ -7,7 +7,7 @@ const Features = () => {
         { 
             icon: UserGroupIcon, 
             text: "Network & Connect", 
-            subtext: "with Industry Leaders" 
+            subtext: "with coolest folks" 
         },
         { 
             icon: ThreeDViewIcon, 

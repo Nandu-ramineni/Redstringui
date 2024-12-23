@@ -11,15 +11,15 @@ import ScrollingLogos from '../Components/ScrollingLogos'
 const Homepage = () => {
     return (
         <div className=" bg-black text-white relative">
-            <Navbar />
+            {/* <Navbar /> */}
             <Hero />
             {/* <ScrollingLogos /> */}
             <Features />
             <Domains />
             <Application />
-            <div id="contact">
+            {/* <div id="contact">
                 <Contact />
-            </div>
+            </div> */}
             <Footer />
         </div>
     )
