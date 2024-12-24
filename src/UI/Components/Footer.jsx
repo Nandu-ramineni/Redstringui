@@ -1,7 +1,7 @@
 import { Facebook01Icon, InstagramIcon, Linkedin01Icon, NewTwitterIcon } from 'hugeicons-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Logo from '@/assets/Main1.jpg';
 const Footer = () => {
     return (
         <main className="p-4">
@@ -44,8 +44,9 @@ const Footer = () => {
                 {/* Logo */}
                 <div className="flex flex-col items-start md:items-center gap-2">
                     <Link to="/" className="flex items-center">
-                        <span className="text-red-600 font-semibold text-3xl tracking-wide">Red</span>
-                        <span className="text-white font-semibold text-3xl tracking-wide">string</span>
+                    <img src={Logo} alt="Red String" className="h-9 w-auto md:h-12" />
+                        {/* <span className="text-red-600 font-semibold text-3xl tracking-wide">Red</span>
+                        <span className="text-white font-semibold text-3xl tracking-wide">string</span> */}
                     </Link>
                 </div>
 

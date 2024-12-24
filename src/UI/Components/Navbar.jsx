@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Cancel01Icon, Menu03Icon } from 'hugeicons-react';
-import Logo from '@/assets/image.png';
+import Logo from '@/assets/Main1.jpg';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,9 +15,9 @@ const Navbar = () => {
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center px-4">
-                
-                    <span className="text-red-600 font-semibold text-3xl tracking-wide">Red</span>
-                    <span className="text-white font-semibold text-3xl tracking-wide">string</span>
+                    <img src={Logo} alt="Red String" className="h-9 w-auto md:h-12" />
+                    {/* <span className="text-red-600 font-semibold text-3xl tracking-wide">Red</span>
+                    <span className="text-white font-semibold text-3xl tracking-wide">string</span> */}
                 </Link>
 
                 {/* Menu Toggle */}

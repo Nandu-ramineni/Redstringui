@@ -25,6 +25,15 @@ const Contact = ({ setIsEmailSuccess }) => {
                 setIsEmailSuccess(false);
                 console.log(error.text);
             });
+        const url = "https://script.google.com/macros/s/AKfycbxlnWR9c_EqwpBFNI3zodXjLx25iX19rVPI7s0iJmsJxaM1c_EQ4nNlHjnJy8keSNgAug/exec"
+        fetch(url, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: (`Name=${form.current.name.value}&Email=${form.current.email.value}&PhoneNo=${form.current.phoneNo.value}&Linkedin=${form.current.linkedin.value}&College=${form.current.college.value}&Passout=${form.current.pass.value}&Domain=${form.current.domain.value}&Proof=${form.current.work.value}&SuperPower=${form.current.superpower.value}&Perspective=${form.current.perspective.value}`)
+        }).then(res => res.text()).then(res => console.log(res)).catch(err => console.log(err));
     }
 
     return (
