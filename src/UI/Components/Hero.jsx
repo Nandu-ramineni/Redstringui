@@ -57,9 +57,9 @@ const Hero = () => {
                 </h1>
                 <div className="max-w-2xl mx-auto mb-12">
                     <p className="text-lg sm:text-xl text-gray-400">
-                        Building the <span className="text-white font-semibold">The Club of</span> Community
+                        Building the Community of
                         <br />
-                        Disruptive Talent
+                        <span className="text-white font-semibold">Disruptive Talent</span> 
                     </p>
                 </div>
                 <Link to="/join">
