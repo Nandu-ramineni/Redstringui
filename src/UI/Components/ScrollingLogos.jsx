@@ -7,7 +7,7 @@ import { motion} from "framer-motion"
 const logos = [
     { name: '18startup', image: Logo },
     { name: 'Avatron', image: Logo1 },
-    { name: 'Campus', image: Logo2 },
+    { name: 'Campusify', image: Logo2 },
     { name: 'Kodeblue', image: Logo3 },
 ];
 export default function ScrollingLogos() {
