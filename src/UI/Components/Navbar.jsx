@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center px-4">
-                    <img src={Logo} alt="Red String" className="h-9 w-auto md:h-12" />
+                    <img src={Logo} alt="Red String" className="h-9 w-auto md:h-12" loading='lazy' />
                     {/* <span className="text-red-600 font-semibold text-3xl tracking-wide">Red</span>
                     <span className="text-white font-semibold text-3xl tracking-wide">string</span> */}
                 </Link>
