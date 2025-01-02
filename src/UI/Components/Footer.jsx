@@ -2,6 +2,7 @@ import { Facebook01Icon, InstagramIcon, Linkedin01Icon, NewTwitterIcon } from 'h
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '@/assets/Main1.jpg';
+import { Button } from '@/components/ui/button';
 const Footer = () => {
     return (
         <main className="p-4">
@@ -44,9 +45,14 @@ const Footer = () => {
                 {/* Logo */}
                 <div className="flex flex-col items-start md:items-center gap-2">
                     <Link to="/" className="flex items-center">
-                    <img src={Logo} alt="Red String" className="h-9 w-auto md:h-12" />
+                        <img src={Logo} alt="Red String" className="h-9 w-auto md:h-12" />
                         {/* <span className="text-red-600 font-semibold text-3xl tracking-wide">Red</span>
                         <span className="text-white font-semibold text-3xl tracking-wide">string</span> */}
+                    </Link>
+                    <Link to="/join">
+                        <Button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 sm:px-6 sm:py-4 text-lg w-full sm:w-auto">
+                            Join the club
+                        </Button>
                     </Link>
                 </div>
 
@@ -54,10 +60,10 @@ const Footer = () => {
                 <div className="text-left md:text-right">
                     <h1 className="text-xl text-white">Contact us</h1>
                     <a
-                        href="mailto:support@redstring@gmail.co"
+                        href="mailto:founders@redstring.co.in"
                         className="text-gray-400 hover:text-white transition-colors"
                     >
-                        support@redstring@gmail.co
+                        founders@redstring.co.in
                     </a>
                 </div>
             </section>

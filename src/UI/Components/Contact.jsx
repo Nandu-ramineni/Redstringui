@@ -81,11 +81,11 @@ const Contact = ({ setIsEmailSuccess }) => {
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">What’s your personal “superpower” that makes you stand out?</Label>
-                                    <Input type="text" name="superpower" id="superpower" placeholder="Your message" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <textarea type="text" name="superpower" id="superpower" placeholder="Your message" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400 rounded-lg" />
                                 </div>
                                 <div className="flex flex-col space-y-3">
                                     <Label htmlFor="linkedin" className="text-[#727272]">What’s your unique perspective on startups or entrepreneurship?</Label>
-                                    <Input type="text" name="perspective" id="perspective" placeholder="Your message" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400" />
+                                    <textarea type="text" name="perspective" id="perspective" placeholder="Your message" required  className="bg-[#1C1C1C] px-2 py-4 border-none text-gray-400 rounded-lg" />
                                 </div>
                             </div>
                             <div className="flex justify-center py-4">
