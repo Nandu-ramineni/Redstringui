@@ -1,10 +1,11 @@
 import { Button } from '@/components/ui/button'
-import React from 'react'
+import React from 'react';
+import { GoArrowUpRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div className="relative min-h-[100vh] flex justify-center items-center m-auto">
+        <div className="relative pt-24 md:pt-0 md:h-screen flex justify-center items-center m-auto">
             {/* Scoped Background Layers */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Gradient Background */}
@@ -63,8 +64,8 @@ const Hero = () => {
                     </p>
                 </div>
                 <Link to="/join">
-                <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-lg w-full sm:w-auto">
-                    Join the club
+                <Button className="flex m-auto bg-red-600 hover:bg-red-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-lg w-full sm:w-auto">
+                    Join the club <GoArrowUpRight className='text-2xl'/>
                 </Button>
                 </Link>
             </main>

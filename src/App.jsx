@@ -4,6 +4,7 @@ import Homepage from './UI/Pages/Homepage'
 import Contact from './UI/Components/Contact'
 import Navbar from './UI/Components/Navbar'
 import FormSuccess from './UI/Components/FormSuccess'
+import Incubation from './UI/Pages/PreIncubation/Incubation'
 
 const App = () => {
   const [isEmailSuccess, setIsEmailSuccess] = useState(false);
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path='/pre-incubation' element={<Incubation />} />
           <Route
             path="/join"
             element={<Contact setIsEmailSuccess={setIsEmailSuccess} />}
