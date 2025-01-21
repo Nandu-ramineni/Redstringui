@@ -58,7 +58,7 @@ export default function Enrollment() {
                     <Button
                         onClick={Handler}
                         size="lg"
-                        className="flex m-auto px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 rounded-lg shadow-lg shadow-pink-500/30 transform transition-transform hover:scale-110"
+                        className="w-full sm:w-auto flex m-auto px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 rounded-lg shadow-lg shadow-pink-500/30 transform transition-transform hover:scale-110"
                     >
                         Enroll Now to Transform Your Career! <GoArrowUpRight className="text-lg"/>
                     </Button>
